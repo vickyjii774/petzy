@@ -86,8 +86,8 @@ const Order = () => {
           orderId: res.data.order._id,
           total_amount: total,
           product_code: "EPAYTEST",
-          success_url: "http://localhost:5173/payment-success",
-          failure_url: "http://localhost:5173/payment-failed"
+          success_url: "https://your-frontend-name.vercel.app/payment-success",
+          failure_url: "https://your-frontend-name.vercel.app/payment-failed"
         });
         document.write(payRes.data);
         return;
