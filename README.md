@@ -9,8 +9,6 @@ The backend powers a **frontend application** built with React and Tailwind CSS 
 
 - Customer authentication (register/login)
 - Place new orders
-- Order status updates (pending, completed, cancelled)
-- Admin-only order history access
 - JWT-based secure authentication
 - Modular backend structure for easy maintenance
 - Admin login integration pending
@@ -164,13 +162,4 @@ npm run dev
 
 ---
 
-## License
 
-MIT
-
----
-
-## Author
-
-**Ronish Ranjit** – Backend Developer  
-GitHub: [Zinotozerg13](https://github.com/Zinotozerg13)
