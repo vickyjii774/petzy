@@ -22,7 +22,7 @@ const Footer = ({ footerRef }) => {
 
             <div>
               <h3 className="text-xl font-bold text-yellow-400 mb-4">स्थान (Location)</h3>
-              <p className="text-orange-300">Balaju,Baisdhara</p>
+              <p className="text-orange-300">Balaju, Baisdhara</p>
 
               <p className="text-orange-300">Kathmandu, Nepal</p>
               <p className="text-orange-300 mt-2">Near Ancient Temple</p>
