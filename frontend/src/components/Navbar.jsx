@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { Link } from "react-router-dom";
+
+
 
 const Navbar = ({ isLoggedIn, setIsLoggedIn, scrollToFooter }) => {
   const navigate = useNavigate();
@@ -66,27 +69,40 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, scrollToFooter }) => {
 
   return (
     <div>
-      <div className="h-3 bg-gradient-to-r from-red-600 via-orange-500 to-yellow-500"></div>
-      <nav className="bg-red-800 shadow-xl sticky top-0 z-50">
+      <div className="h-3 bg-gradient-to-r from-cyan-700 via-teal-700 to-emerald-700"></div>
+      <nav className="bg-gradient-to-r from-cyan-700 via-teal-700 to-emerald-700 shadow-xl sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-20">
           <div className="flex items-center space-x-3">
-            <div className="text-yellow-400 text-4xl font-bold">नेवा:</div>
-            <div className="text-orange-200 text-2xl font-bold">Newa Baji</div>
+
+          <Link to="/">
+  <img
+    src="/petzy101.png"
+    alt="Petzy"
+    className="h-16 md:h-20 lg:h-24 w-auto cursor-pointer"
+  />
+</Link>
+
+
+
+
+            <div className="text-red-200 text-sm md:text-base font-semibold">
+              Your One-Stop Pet Store
+            </div>
           </div>
 
 
           <div className="hidden md:flex items-center space-x-6">
-            <a href="/" className="text-orange-200 hover:text-yellow-400 transition-colors duration-300 font-medium text-lg">Home</a>
-            <a href="/menu" className="text-orange-200 hover:text-yellow-400 transition-colors duration-300 font-medium text-lg">Menu</a>
-            <a href="/about" className="text-orange-200 hover:text-yellow-400 transition-colors duration-300 font-medium text-lg">About</a>
-            <a onClick={scrollToFooter} className="text-orange-200 hover:text-yellow-400 transition-colors duration-300 font-medium text-lg">Contact</a>
+            <a href="/" className="text-cyan-50 hover:text-red-200 transition-colors duration-300 font-medium text-lg">Home</a>
+            <a href="/menu" className="text-cyan-50 hover:text-red-200 transition-colors duration-300 font-medium text-lg">Shop</a>
+            <a href="/about" className="text-cyan-50 hover:text-red-200 transition-colors duration-300 font-medium text-lg">About</a>
+            <a onClick={scrollToFooter} className="text-cyan-50 hover:text-red-200 transition-colors duration-300 font-medium text-lg cursor-pointer">Contact</a>
             {!isLoggedIn ? (
-              <button onClick={handleLogin} className="flex items-center gap-2 bg-yellow-500 text-red-800 px-4 py-2 rounded-lg font-bold hover:bg-yellow-400 transition-colors duration-300 shadow-md hover:shadow-lg">
+              <button onClick={handleLogin} className="flex items-center gap-2 bg-red-300 text-cyan-900 px-4 py-2 rounded-lg font-bold hover:text-red-200 transition-colors duration-300 shadow-md hover:shadow-lg">
                 <LoginIcon />
                 <span>Login</span>
               </button>
             ) : (
-              <button onClick={() => setShowLogoutModal(true)} className="bg-red-600 text-yellow-400 p-2 rounded-lg hover:bg-red-700">
+              <button onClick={() => setShowLogoutModal(true)} className="bg-cyan-800 text-red-200 p-2 rounded-lg hover:bg-cyan-900">
                 <LogoutIcon />
               </button>
             )}
@@ -95,30 +111,30 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, scrollToFooter }) => {
 
           <div className="md:hidden flex items-center space-x-3">
             {!isLoggedIn ? (
-              <button onClick={handleLogin} className="flex items-center gap-2 bg-yellow-500 text-red-800 px-4 py-2 rounded-lg font-bold hover:bg-yellow-400 transition-colors duration-300 shadow-md hover:shadow-lg">
+              <button onClick={handleLogin} className="flex items-center gap-2 bg-red-300 text-cyan-900 px-4 py-2 rounded-lg font-bold hover:bg-yellow-300 transition-colors duration-300 shadow-md hover:shadow-lg">
                 <LoginIcon />
                 <span>Login</span>
               </button>
             ) : (
-              <button onClick={() => setShowLogoutModal(true)} className="bg-red-600 text-yellow-400 p-2 rounded-lg">
+              <button onClick={() => setShowLogoutModal(true)} className="bg-cyan-800 text-red-200 p-2 rounded-lg">
                 <LogoutIcon />
               </button>
             )}
-            <button onClick={() => setMenuOpen(!menuOpen)} className="text-orange-200">
-              <div className="w-6 h-0.5 bg-orange-200 mb-1"></div>
-              <div className="w-6 h-0.5 bg-orange-200 mb-1"></div>
-              <div className="w-6 h-0.5 bg-orange-200"></div>
+            <button onClick={() => setMenuOpen(!menuOpen)} className="text-cyan-50">
+              <div className="w-6 h-0.5 bg-cyan-50 mb-1"></div>
+              <div className="w-6 h-0.5 bg-cyan-50 mb-1"></div>
+              <div className="w-6 h-0.5 bg-cyan-50"></div>
             </button>
           </div>
         </div>
 
 
         {menuOpen && (
-          <div className="md:hidden flex flex-col bg-red-800 px-4 py-3 space-y-2">
-            <a href="/" className="text-orange-200 hover:text-yellow-400">Home</a>
-            <a href="/menu" className="text-orange-200 hover:text-yellow-400">Menu</a>
-            <a href="/about" className="text-orange-200 hover:text-yellow-400">About</a>
-            <a onClick={scrollToFooter} className="text-orange-200 hover:text-yellow-400">Contact</a>
+          <div className="md:hidden flex flex-col bg-gradient-to-r from-cyan-700 to-teal-700 px-4 py-3 space-y-2">
+            <a href="/" className="text-cyan-50 hover:text-red-200">Home</a>
+            <a href="/menu" className="text-cyan-50 hover:text-red-200">Shop</a>
+            <a href="/about" className="text-cyan-50 hover:text-red-200">About</a>
+            <a onClick={scrollToFooter} className="text-cyan-50 hover:text-red-200 cursor-pointer">Contact</a>
           </div>
         )}
       </nav>
@@ -127,11 +143,11 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, scrollToFooter }) => {
       {showLogoutModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-xl shadow-2xl max-w-sm w-full p-6 text-center">
-            <h3 className="text-xl font-bold text-red-800 mb-3">Logout?</h3>
-            <p className="text-red-600 mb-6">Are you sure you want to logout?</p>
+            <h3 className="text-xl font-bold text-cyan-900 mb-3">Logout?</h3>
+            <p className="text-slate-600 mb-6">Are you sure you want to logout?</p>
             <div className="flex gap-3">
-              <button onClick={() => setShowLogoutModal(false)} className="flex-1 border-2 border-gray-300 px-4 py-2 rounded-lg">Cancel</button>
-              <button onClick={confirmLogout} disabled={loggingOut} className="flex-1 bg-red-600 text-white px-4 py-2 rounded-lg">
+              <button onClick={() => setShowLogoutModal(false)} className="flex-1 border-2 border-slate-300 px-4 py-2 rounded-lg hover:bg-slate-50">Cancel</button>
+              <button onClick={confirmLogout} disabled={loggingOut} className="flex-1 bg-gradient-to-r from-cyan-600 to-teal-600 text-white px-4 py-2 rounded-lg hover:from-cyan-700 hover:to-teal-700">
                 {loggingOut ? "..." : "Yes"}
               </button>
             </div>

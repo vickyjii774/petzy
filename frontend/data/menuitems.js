@@ -1,61 +1,192 @@
+// Petzy product catalog used by the Menu (Shop) page.
+// Each key is a category; items keep the same structure (foodid, name, price, etc.)
+// so the existing cart & order logic from C_Project continues to work.
 const menuitems = {
-  yomari: [
-    { foodid: 14, name: 'Plain Yomari', nepali: 'साधारण योमरी', price: 60, description: 'Traditional steamed dumplings' },
-    { foodid: 15, name: 'Sweet Yomari', nepali: 'मिठो योमरी', price: 70, description: 'Sweet filled steamed dumplings', specialty: true },
-    { foodid: 27, name: 'Chocolate Yomari', nepali: 'चोकलेट योमरी', price: 80, description: 'Steamed dumpling filled with chocolate' },
-    { foodid: 34, name: 'Sesame Yomari', nepali: 'तिलको योमरी', price: 75, description: 'Yomari filled with sesame paste' }
+  food: [
+    {
+      foodid: 1,
+      name: "Premium Dog Kibble",
+    
+      price: 799,
+      description: "High‑protein chicken & rice formula for active adult dogs.",
+      specialty: true
+    },
+    {
+      foodid: 2,
+      name: "Grain‑Free Cat Food",
+     
+      price: 699,
+      description: "Gentle on sensitive tummies with real fish and veggies."
+    },
+    {
+      foodid: 3,
+      name: "Puppy Starter Pack",
+    
+      price: 999,
+      description: "Complete nutrition pack for growing puppies (food + treats)."
+    },
+    {
+      foodid: 4,
+      name: "Small Pet Mix",
+    
+      price: 450,
+      description: "Balanced pellets for rabbits, hamsters, and guinea pigs."
+    }
   ],
-  bara: [
-    { foodid: 16, name: 'Plain Bara', nepali: 'साधारण बारा', price: 80, description: 'Traditional lentil pancake',  },
-    { foodid: 17, name: 'Egg Bara', nepali: 'अण्डा बारा', price: 140, description: 'Lentil pancake with egg topping',  },
-    { foodid: 18, name: 'Meat Bara', nepali: 'मासु बारा', price: 160, description: 'Lentil pancake with meat topping', specialty: true },
-    { foodid: 19, name: 'Mixed Bara', nepali: 'मिक्स बारा', price: 180, description: 'Lentil pancake with mixed toppings',  },
-    { foodid: 28, name: 'Cheese Bara', nepali: 'चिज बारा', price: 150, description: 'Lentil pancake with melted cheese topping',  },
-    { foodid: 35, name: 'Paneer Bara', nepali: 'पनीर बारा', price: 160, description: 'Lentil pancake with paneer topping',  }
+  treats: [
+    {
+      foodid: 5,
+      name: "Dental Chew Sticks",
+      
+      price: 350,
+      description: "Cleans teeth and freshens breath with every chew.",
+      specialty: true
+    },
+    {
+      foodid: 6,
+      name: "Chicken Jerky Bites",
+   
+      price: 520,
+      description: "Slow‑dried real chicken treats, no artificial colors."
+    },
+    {
+      foodid: 7,
+      name: "Catnip Crunchies",
+    
+      price: 280,
+      description: "Irresistible crunchy snacks infused with premium catnip."
+    },
+    {
+      foodid: 8,
+      name: "Training Treat Mix",
+      
+      price: 390,
+      description: "Small, soft treats perfect for training sessions."
+    }
   ],
-  chatamari: [
-    { foodid: 20, name: 'Plain Chatamari', nepali: 'साधारण चाटामरी', price: 90, description: 'Plain Newari rice crepe',  },
-    { foodid: 21, name: 'Egg Chatamari', nepali: 'अण्डा चाटामरी', price: 140, description: 'Rice crepe with egg topping',  },
-    { foodid: 22, name: 'Meat Chatamari', nepali: 'मासु चाटामरी', price: 180, description: 'Rice crepe with meat topping',  },
-    { foodid: 23, name: 'Mixed Chatamari', nepali: 'मिक्स चाटामरी', price: 200, description: 'Rice crepe with mixed toppings', specialty: true },
-    { foodid: 29, name: 'Paneer Chatamari', nepali: 'पनीर चाटामरी', price: 160, description: 'Rice crepe topped with spiced paneer',  },
-    { foodid: 36, name: 'Cheese Chatamari', nepali: 'चिज चाटामरी', price: 170, description: 'Rice crepe with cheese topping',  }
+  clothes: [
+    {
+      foodid: 9,
+      name: "Cozy Winter Hoodie",
+   
+      price: 1200,
+      description: "Fleece‑lined hoodie to keep dogs warm in cold weather.",
+      specialty: true
+    },
+    {
+      foodid: 10,
+      name: "Raincoat for Dogs",
+      
+      price: 950,
+      description: "Waterproof and lightweight with reflective strips."
+    },
+    {
+      foodid: 11,
+      name: "Cat Bow Tie Collar",
+     
+      price: 450,
+      description: "Adjustable collar with a cute bow tie for special days."
+    },
+    {
+      foodid: 12,
+      name: "Paw‑Print Bandana Set",
+      
+      price: 300,
+      description: "Colorful bandanas for dogs & cats, comfortable and stylish."
+    }
   ],
-  momo: [
-    { foodid: 24, name: 'Veg Momo', nepali: 'तरकारी मोमो', price: 140, description: 'Steamed vegetable dumplings',  },
-    { foodid: 25, name: 'Chicken Momo', nepali: 'कुखुराको मोमो', price: 160, description: 'Steamed chicken dumplings',  },
-    { foodid: 26, name: 'Buff Momo', nepali: 'भैंसको मोमो', price: 200, description: 'Steamed buffalo meat dumplings',  },
-    { foodid: 30, name: 'Jhol Momo', nepali: 'झोल मोमो', price: 180, description: 'Steamed dumplings served in spicy soup', specialty: true },
-    { foodid: 37, name: 'Fried Momo', nepali: 'तारेको मोमो', price: 160, description: 'Crispy fried dumplings',  }
+  house: [
+    {
+      foodid: 13,
+      name: "Plush Donut Bed",
+ 
+      price: 1800,
+      description: "Ultra‑soft round bed for perfect naps and snuggles.",
+      specialty: true
+    },
+    {
+      foodid: 14,
+      name: "Cat Tree & Scratcher",
+    
+      price: 3200,
+      description: "Multi‑level play tower with scratching posts and hideouts."
+    },
+    {
+      foodid: 15,
+      name: "Outdoor Kennel",
+      
+      price: 5400,
+      description: "Weather‑resistant dog house for gardens and balconies."
+    },
+    {
+      foodid: 16,
+      name: "Pet Travel Crate",
+    
+      price: 2600,
+      description: "Air‑flow design with secure lock for safe travels."
+    }
   ],
-  snacks: [
-    { foodid: 5, name: 'Sekuwa', nepali: 'सेकुवा', price: 300, description: 'Grilled marinated meat skewers',  },
-    { foodid: 6, name: 'Choila', nepali: 'छोयला', price: 280, description: 'Spiced grilled buffalo meat', specialty: true },
-    { foodid: 7, name: 'Sukuti', nepali: 'सुकुटी', price: 250, description: 'Traditional dried meat curry',  },
-    { foodid: 8, name: 'Chatpate', nepali: 'चटपटे', price: 150, description: 'Spicy mixed snack',  },
-    { foodid: 31, name: 'Fried Sukuti', nepali: 'तारेको सुकुटी', price: 270, description: 'Crispy fried dried meat with spices',  },
-    { foodid: 38, name: 'Spicy Peanut Mix', nepali: 'मसालेदार बदाम', price: 120, description: 'Roasted peanuts with spices',  }
+  medicine: [
+    {
+      foodid: 17,
+      name: "Flea & Tick Control Drops",
+ 
+      price: 650,
+      description: "Monthly protection against fleas and ticks for dogs & cats.",
+      specialty: true
+    },
+    {
+      foodid: 18,
+      name: "Multivitamin Chewables",
+   
+      price: 580,
+      description: "Supports immunity, coat health, and overall vitality."
+    },
+    {
+      foodid: 19,
+      name: "Pet Wound Spray",
+      
+      price: 420,
+      description: "Gentle antiseptic spray for minor cuts and scratches."
+    },
+    {
+      foodid: 20,
+      name: "Deworming Tablets",
+      
+      price: 380,
+      description: "Effective deworming for dogs and cats (weight‑based)."
+    }
   ],
-  weekendSpecial: [
-    { foodid: 11, name: 'Weekend BBQ', nepali: 'सप्ताहान्त बार्बेक्यू', price: 500, description: 'Special weekend barbecue platter',  },
-    { foodid: 32, name: 'Newari Feast', nepali: 'नेवारी भोज', price: 600, description: 'Weekend platter with assorted Newari dishes', specialty: true },
-    { foodid: 39, name: 'Family Combo', nepali: 'परिवार सेट', price: 700, description: 'Weekend combo for family sharing', specialty: true }
-  ],
-  seasonal: [
-    { foodid: 12, name: 'Seasonal Thakali', nepali: 'मौसमी थकाली', price: 350, description: 'Seasonal Thakali set meal',  },
-    { foodid: 13, name: 'Festival Special', nepali: 'चाडपर्व विशेष', price: 400, description: 'Festival special combination', specialty: true },
-    { foodid: 33, name: 'Winter Ghyu Set', nepali: 'जाडो घ्यू सेट', price: 380, description: 'Seasonal meal with ghee-rich items', specialty: true },
-    { foodid: 40, name: 'Summer Achar Set', nepali: 'गर्मी अचार सेट', price: 320, description: 'Seasonal pickles and light meal',  }
-  ],
-  liquorSpecial: [
-    { foodid: 9, name: 'Special Thon', nepali: 'विशेष थों', price: 300, description: 'Traditional rice beer special' },
-    { foodid: 10, name: 'Aila', nepali: 'ऐला', price: 250, description: 'Local distilled spirits' }
-  ],
-  liquor: [
-    { foodid: 1, name: 'Whiskey', nepali: 'ह्विस्की', price: 300, description: 'Premium whiskey selection' },
-    { foodid: 2, name: 'Vodka', nepali: 'भोड्का', price: 250, description: 'Premium vodka selection' },
-    { foodid: 3, name: 'Rum', nepali: 'रम', price: 280, description: 'Premium rum selection' },
-    { foodid: 4, name: 'Beer', nepali: 'बियर', price: 200, description: 'Cold beer bottles' }
+  toys: [
+    {
+      foodid: 21,
+      name: "Rope Tug Toy",
+    
+      price: 350,
+      description: "Durable rope toy for interactive play and dental health."
+    },
+    {
+      foodid: 22,
+      name: "Squeaky Plush Bone",
+  
+      price: 320,
+      description: "Soft plush toy with squeaker for endless fun."
+    },
+    {
+      foodid: 23,
+      name: "Laser Pointer Toy",
+    
+      price: 250,
+      description: "Keep your cat active with a fun moving light."
+    },
+    {
+      foodid: 24,
+      name: "Interactive Puzzle Feeder",
+   
+      price: 1100,
+      description: "Slow‑feeding bowl that challenges and entertains your pet.",
+      specialty: true
+    }
   ]
 };
 

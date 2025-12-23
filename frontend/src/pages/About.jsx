@@ -3,16 +3,16 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 const About = () => {
   return (
-    <div className="min-h-screen bg-orange-50">
+    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
    
       
       
-      <section className="py-16 px-6 bg-gradient-to-br from-[#7f1d1d] via-[#b91c1c] to-[#f97316] text-white">
+      <section className="py-16 px-6 bg-gradient-to-r from-cyan-600 via-teal-600 to-emerald-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="text-yellow-400 text-xl mb-4 font-semibold">हाम्रो कथा</div>
-          <h1 className="text-5xl font-bold mb-8">About Newa Chhen</h1>
-          <p className="text-xl text-orange-200 leading-relaxed">
-            Where 2000 years of Newari tradition meets your table
+          <div className="text-yellow-300 text-xl mb-4 font-semibold">🐾 About Petzy</div>
+          <h1 className="text-5xl font-bold mb-8 text-white">Your One-Stop Pet Store</h1>
+          <p className="text-xl text-cyan-50 leading-relaxed">
+            Everything your pets need – food, toys, beds, medicine, and trusted veterinary care
           </p>
         </div>
       </section>
@@ -22,40 +22,39 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-red-800 mb-8">Our Heritage</h2>
-              <p className="text-lg text-red-700 mb-6 leading-relaxed">
-                Born from the ancient kitchens of Patan, Newa Chhen preserves the authentic 
-                flavors of Nepal's Kathmandu Valley. Our recipes haven't changed in centuries - 
-                they've been passed down through generations of Newari families who understood 
-                that food is more than sustenance.
+              <h2 className="text-4xl font-bold text-cyan-900 mb-8">Why Choose Petzy?</h2>
+              <p className="text-lg text-slate-700 mb-6 leading-relaxed">
+                Petzy is more than a pet store – we're your trusted partner in pet care. 
+                From premium food and cozy beds to essential medicines and fun toys, 
+                we handpick every product to keep your furry friends happy and healthy.
               </p>
-              <p className="text-lg text-red-600 mb-8 leading-relaxed">
-                Every dish we serve carries the weight of history and the warmth of tradition. 
-                From our sacred Samay Baji to the delicate Yomari, each meal is a celebration 
-                of our rich cultural heritage.
+              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                Our mission is simple: make pet care easy, affordable, and accessible. 
+                Whether you're shopping for a new puppy, caring for an older cat, or 
+                looking for the perfect gift, Petzy has everything you need.
               </p>
               
               <div className="grid grid-cols-2 gap-6">
-                <div className="text-center bg-white p-4 rounded-lg shadow-md">
-                  <div className="text-3xl font-bold text-red-600">2000+</div>
-                  <div className="text-red-700">Years of Tradition</div>
+                <div className="text-center bg-gradient-to-br from-cyan-50 to-teal-50 p-4 rounded-lg shadow-md border-2 border-cyan-200">
+                  <div className="text-3xl font-bold text-cyan-600">5K+</div>
+                  <div className="text-cyan-800 font-semibold">Happy Pets</div>
                 </div>
-                <div className="text-center bg-white p-4 rounded-lg shadow-md">
-                  <div className="text-3xl font-bold text-orange-600">3</div>
-                  <div className="text-red-700">Master Chefs</div>
+                <div className="text-center bg-gradient-to-br from-teal-50 to-emerald-50 p-4 rounded-lg shadow-md border-2 border-teal-200">
+                  <div className="text-3xl font-bold text-teal-600">200+</div>
+                  <div className="text-teal-800 font-semibold">Trusted Vets</div>
                 </div>
               </div>
             </div>
             
             <div className="relative">
               <img
-                src="https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_0,w_5000,h_2812,r_0,c_crop/q_80,w_900,dpr_1,f_auto,fl_progressive,c_limit/the-nanee-bhaktapur-nepal/Traditional_newari_Platter__11034f62"
-                alt="Traditional Newari cooking"
-                className="rounded-2xl shadow-2xl w-full"
+                src="https://images.pexels.com/photos/5731860/pexels-photo-5731860.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Happy pets"
+                className="rounded-2xl shadow-2xl w-full border-4 border-cyan-200"
               />
-              <div className="absolute -bottom-6 -right-6 bg-yellow-500 text-red-800 p-6 rounded-xl shadow-lg">
-                <div className="font-bold">Authentic</div>
-                <div className="text-sm">Newari Recipes</div>
+              <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-yellow-400 to-orange-400 text-cyan-900 p-6 rounded-xl shadow-lg border-2 border-white">
+                <div className="font-bold text-lg">🐾</div>
+                <div className="text-sm font-semibold">Pet Care Experts</div>
               </div>
             </div>
           </div>
@@ -63,42 +62,41 @@ const About = () => {
       </section>
 
       
-      <section className="py-20 px-6 bg-red-800">
-        <div className="max-w-6xl mx-auto text-white">
+      <section className="py-20 px-6 bg-gradient-to-r from-cyan-600 via-teal-600 to-emerald-600 text-white">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">What Makes Us Special</h2>
-            <div className="text-yellow-400 text-lg">के हामीलाई विशेष बनाउँछ</div>
+            <h2 className="text-4xl font-bold mb-6 text-white">What Makes Us Special</h2>
+            <div className="text-yellow-300 text-lg">🐾 Trusted Pet Care Partner</div>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC_bxO5298RlvzKa82YNjE6KzVbXlJ6Y6mwA&s" className="w-40 h-40 bg-yellow-500 rounded-full mx-auto mb-6 flex items-center justify-center">
-                
-              </img>
-              <h3 className="text-xl font-bold text-yellow-400 mb-4">Ancient Recipes</h3>
-              <p className="text-orange-200 leading-relaxed">
-                Original recipes unchanged for centuries, prepared exactly as our ancestors did
+            <div className="text-center bg-white/10 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20">
+              <div className="w-20 h-20 bg-gradient-to-br from-cyan-400 to-teal-400 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl">
+                🍖
+              </div>
+              <h3 className="text-xl font-bold text-yellow-300 mb-4">Premium Products</h3>
+              <p className="text-cyan-50 leading-relaxed">
+                Handpicked food, treats, and accessories from trusted brands for your pet's health
               </p>
             </div>
             
-            <div className="text-center">
-               <img  src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=500&fit=crop" className="w-40 h-40 bg-yellow-500 rounded-full mx-auto mb-6 flex items-center justify-center">
-                
-              </img>
-              <h3 className="text-xl font-bold text-yellow-400 mb-4">Sacred Ingredients</h3>
-              <p className="text-orange-200 leading-relaxed">
-                Sourced from local farms in the Kathmandu Valley, blessed by tradition
+            <div className="text-center bg-white/10 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20">
+              <div className="w-20 h-20 bg-gradient-to-br from-teal-400 to-emerald-400 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl">
+                🏥
+              </div>
+              <h3 className="text-xl font-bold text-yellow-300 mb-4">Vet Network</h3>
+              <p className="text-cyan-50 leading-relaxed">
+                Connect with nearby veterinary clinics and pet care services for checkups and emergencies
               </p>
             </div>
             
-            <div className="text-center">
-               <img  src="https://cdn.roadsandkingdoms.com/uploads/2018/07/RNK24.jpg?class=1536" 
-               className="w-40 h-40 bg-yellow-500 rounded-full mx-auto mb-6 flex items-center justify-center">
-                
-              </img>
-              <h3 className="text-xl font-bold text-yellow-400 mb-4">Cultural Experience</h3>
-              <p className="text-orange-200 leading-relaxed">
-                Not just a meal, but a journey through Nepal's rich cultural heritage
+            <div className="text-center bg-white/10 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20">
+              <div className="w-20 h-20 bg-gradient-to-br from-emerald-400 to-cyan-400 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl">
+                ❤️
+              </div>
+              <h3 className="text-xl font-bold text-yellow-300 mb-4">Pet Adoption</h3>
+              <p className="text-cyan-50 leading-relaxed">
+                Find your perfect companion through our adoption program – give a pet a loving home
               </p>
             </div>
           </div>
@@ -106,21 +104,21 @@ const About = () => {
       </section>
 
       
-      <section className="py-20 px-6 bg-gradient-to-r from-orange-400 to-yellow-400">
-        <div className="max-w-4xl mx-auto text-center text-red-800">
-          <h2 className="text-4xl font-bold mb-8">Our Promise</h2>
-          <p className="text-xl mb-8 leading-relaxed">
-            Every meal at Newa Baji is prepared with the same love, respect, and 
-            dedication that our ancestors brought to their kitchens. We promise to 
-            keep these sacred traditions alive, one plate at a time.
+      <section className="py-20 px-6 bg-gradient-to-r from-cyan-50 to-teal-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8 text-cyan-900">Our Promise</h2>
+          <p className="text-xl mb-8 leading-relaxed text-slate-700">
+            At Petzy, we promise to provide the best products and services for your pets. 
+            Your furry friends deserve the best, and we're here to make that happen – 
+            one happy pet at a time.
           </p>
           
-          <div className="bg-white p-8 rounded-xl shadow-lg inline-block">
-            <p className="text-2xl font-bold text-red-700 mb-2">
-              "भोजन हाम्रो संस्कृति हो"
+          <div className="bg-gradient-to-r from-cyan-600 to-teal-600 p-8 rounded-xl shadow-lg inline-block text-white">
+            <p className="text-2xl font-bold mb-2">
+              "Your One-Stop Pet Store"
             </p>
-            <p className="text-lg text-red-600">
-              Food is our culture - and we share it with pride
+            <p className="text-lg text-cyan-50">
+              Everything your pets need, all in one place 🐾
             </p>
           </div>
         </div>
