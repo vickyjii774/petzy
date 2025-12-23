@@ -118,6 +118,12 @@ node server.js
 
 ---
 
+## Security Note ⚠️
+
+We recently rotated secrets and cleaned sensitive data from the repository history. Please do **not** commit real credentials to GitHub. Use the provided `backend/.env.example` and `frontend/.env.example` to configure local environment variables. If you are collaborating on this repository, follow the instructions in `COLLABORATOR_NOTICE.md`.
+
+---
+
 ## Database (MongoDB)
 
 Example `order.model.js` fields:
