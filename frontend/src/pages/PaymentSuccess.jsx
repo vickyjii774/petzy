@@ -21,7 +21,7 @@ const PaymentSuccess = () => {
                 <p className="text-slate-600 mb-4 text-lg">Your pet products order has been confirmed.</p>
                 <div className="bg-gradient-to-r from-cyan-50 to-teal-50 p-4 rounded-xl mb-6 border-2 border-cyan-300">
                     <p className="text-cyan-900 font-bold text-xl">Total: Rs. {finalAmount}</p>
-                    <p className="text-sm text-slate-600 mt-1">Estimated delivery: 2-3 business days</p>
+                    <p className="text-sm text-slate-600 mt-1">Estimated delivery: Within 2-3 days</p>
                 </div>
                 <button
                     onClick={() => window.location.href = '/'}

@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-cyan-50 via-white to-emerald-50">
       {/* Top intro strip with title + motto */}
-      <section className="py-12 px-6 bg-gradient-to-r from-cyan-600 via-teal-600 to-emerald-600 text-white shadow-lg">
+      <section className="py-12 px-6 bg-gradient-to-r from-cyan-600 via-teal-600 to-emerald-200 text-white shadow-lg">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <p className="uppercase tracking-[0.2em] text-xs md:text-sm text-cyan-100 mb-2 font-semibold">

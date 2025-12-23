@@ -29,35 +29,31 @@ const Login = ({ setIsLoggedIn }) => {
 
 
   return (
-    <div className="min-h-screen bg-orange-50">
+    <div className="min-h-screen bg-red-50">
 
 
 
       <section className="py-20 px-6">
         <div className="max-w-md mx-auto">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-red-600">
+          <div className="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-cyan-100">
             <div className="text-center mb-8">
-              <div className="w-20 h-20 bg-gradient-to-br from-red-600 to-orange-500 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-              <h2 className="text-3xl font-bold text-red-800 mb-2">Welcome Back</h2>
-              <p className="text-red-600">लग इन गर्नुहोस् • Sign in to your account</p>
+              
+              <h2 className="text-3xl font-bold text-cyan-800 mb-2">Welcome Back to Petzy</h2>
+              <p className="text-cyan-600">Sign in to your account</p>
             </div>
 
 
             <form onSubmit={handleSubmit} className="space-y-6">
 
               <div>
-                <label className="block text-red-800 font-semibold mb-2">Phone number</label>
+                <label className="block text-cyan-800 font-semibold mb-2">Phone number</label>
                 <div className="relative">
                   <input
                     type="tel"
                     name="phone"
                     value={loginData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 pl-12 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:outline-none transition-colors duration-300"
+                    className="w-full px-4 py-3 pl-12 border-2 border-gray-200 rounded-lg focus:border-cyan-500 focus:outline-none transition-colors duration-300"
                     placeholder="Enter your phone number"
                     maxLength={10}
                     pattern="\d{10}"
@@ -72,14 +68,14 @@ const Login = ({ setIsLoggedIn }) => {
 
 
               <div>
-                <label className="block text-red-800 font-semibold mb-2">Password</label>
+                <label className="block text-cyan-800 font-semibold mb-2">Password</label>
                 <div className="relative">
                   <input
                     type="password"
                     name="password"
                     value={loginData.password}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 pl-12 pr-12 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:outline-none transition-colors duration-300"
+                    className="w-full px-4 py-3 pl-12 pr-12 border-2 border-gray-200 rounded-lg focus:border-cyan-500 focus:outline-none transition-colors duration-300"
                     placeholder="Enter your password"
                   />
                 </div>
@@ -88,15 +84,15 @@ const Login = ({ setIsLoggedIn }) => {
 
 
               {/* Login Button */}
-              <button type="submit" className="w-full py-3 rounded-lg text-lg font-bold bg-gradient-to-r from-red-600 to-red-700 text-white hover:from-red-700 hover:to-red-800 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+              <button type="submit" className="w-full py-3 rounded-lg text-lg font-bold bg-gradient-to-r from-cyan-950 to-cyan-950 text-white hover:from-cyan-9500 hover:to-cyan-950 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                 Sign In
               </button>
             </form>
 
             {/* Sign Up Link */}
             <div className="text-center pt-6">
-              <p className="text-red-700">
-                Don't have an account? <a href="/signup" className="text-red-600 hover:text-red-800 font-bold">Sign up here</a>
+              <p className="text-cyan-500">
+                Don't have an account? <a href="/signup" className="text-cyan-500 hover:text-cyan-950 font-bold">Sign up here</a>
               </p>
             </div>
           </div>
