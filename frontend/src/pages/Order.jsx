@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { CartContext } from '../context/CartContext';
 import axios from 'axios';
+const api = axios.create({ baseURL: import.meta.env.VITE_BACKEND_URL });
 
 const Order = () => {
   const { cart, getCartTotal } = useContext(CartContext);
@@ -29,7 +30,7 @@ const Order = () => {
       if (!token) return;
 
       try {
-        const res = await axios.get("https://aashish-backend.onrender.com/customers/profile", {
+        const res = await api.get("/customers/profile", {
           headers: { Authorization: `Bearer ${token}` }
         });
         const customer = res.data.customer;
@@ -63,7 +64,7 @@ const Order = () => {
     setLoading(true);
     try {
       // Send order to backend first
-      const res = await axios.post("https://aashish-backend.onrender.com/orders/place", {
+      const res = await api.post("/orders/place", {
         items: cart.map(item => ({
           foodid: item.foodid,
           name: item.name,
@@ -82,12 +83,12 @@ const Order = () => {
 
       // ✅ eSewa redirect for online payment
       if (paymentMethod === "esewa") {
-        const payRes = await axios.post("https://aashish-backend.onrender.com/esewa/pay", {
+        const payRes = await api.post("/esewa/pay", {
           orderId: res.data.order._id,
           total_amount: total,
           product_code: "EPAYTEST",
-          success_url: "https://aashish-frontend.vercel.app/payment-success",
-          failure_url: "https://aashish-frontend.vercel.app/payment-failed"
+          success_url: `${import.meta.env.VITE_FRONTEND_URL}/payment-success`,
+          failure_url: `${import.meta.env.VITE_FRONTEND_URL}/payment-failed`
         });
         document.write(payRes.data);
         return;

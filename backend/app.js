@@ -14,7 +14,7 @@ const adminRouter = require('./routes/admin.router');
 app.use(cors({
   origin: [
     "http://localhost:5173", // for local testing
-    "https://aashish-frontend.vercel.app" // your deployed frontend
+    process.env.FRONTEND_URL || "https://petzyy.vercel.app" // your deployed frontend (read from env)
   ],
   credentials: true
 }));

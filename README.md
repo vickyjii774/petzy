@@ -1,7 +1,7 @@
-# Newari Restaurant — Backend 🍽️
+# petzy
 
-A backend for the **Newari Restaurant** project, built with **Node.js**, **Express**, and **MongoDB**.  
-The backend powers a **frontend application** built with React and Tailwind CSS for ordering and tracking food.
+A backend for the **petzy** project, built with **Node.js**, **Express**, and **MongoDB**.  
+The backend powers a **frontend application** built with React and Tailwind CSS for ordering.
 
 ---
 
@@ -54,8 +54,8 @@ resturant/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Zinotozerg13/newari_resturant.git
-cd resturant/backend
+git clone https://github.com/vickyjii774/Petzy
+cd backend
 ```
 
 ### 2. Install Dependencies
